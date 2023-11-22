@@ -391,27 +391,52 @@ int main()
 
     sil::Image image{500, 500};
 
-    for (float x{-2}; x < 2; x += 0.008)
+    for (size_t x = 0; x < image.width(); x++)
     {
-        for (float y{-2}; y < 2; y += 0.008)
+        for (size_t y = 0; y < image.height(); y++)
         {
-            std::complex<float> c{x, y};
+            float x_to_two = x / (float)(image.width()) * 4 - 2;
+            float y_to_two = y / (float)(image.height()) * 4 - 2;
+
+            std::complex<float> c{x_to_two, y_to_two};
             std::complex<float> z{0, 0};
-            z = z * z + c;
-            while (std::abs(z) <= 2)
+
+            int count{0};
+
+            while (count <= 50)
             {
-                for (int i{x}; i < image.width(); i++)
+                z = z * z + c;
+                if (std::abs(z) > 2)
                 {
-                    for (int j{0}; j < image.height(); j++)
-                    {
-                        image.pixel(i, j).r = 1.f;
-                        image.pixel(i, j).g = 1.f;
-                        image.pixel(i, j).b = 1.f;
-                    }
+                    image.pixel(x, y) = glm::vec3{1.f};
+                    break;
                 }
+                count++;
             }
-        };
+        }
     }
+
+    // for (float x{0}; x < 2; x += 0.004)
+    // {
+    //     for (float y{0}; y < 2; y += 0.004)
+    //     {
+    //         std::complex<float> c{x, y};
+    //         std::complex<float> z{0, 0};
+    //
+    //         while (std::abs(z) <= 2)
+    //         {
+
+    //             int int_x{static_cast<int>(x)};
+    //             int int_y{static_cast<int>(y)};
+
+    //             image.pixel(abs(int_x) * 250, abs(int_y) * 250).r = 1.f;
+    //             image.pixel(abs(int_x) * 250, abs(int_y) * 250).g = 1.f;
+    //             image.pixel(abs(int_x) * 250, abs(int_y) * 250).b = 1.f;
+    //         }
+    // z = z * z + c;
+
+    //     };
+    // }
     image.save("output/ex17.png");
 
     return 0;
