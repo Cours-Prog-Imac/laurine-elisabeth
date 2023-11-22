@@ -2,19 +2,6 @@ cmake_minimum_required(VERSION 3.20)
 
 # You can set the name of your project here
 project(ImageEditor)
-add_executable(${PROJECT_NAME})
-
-# Choose your C++ version
-target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
-
-# Prevents compiler-specific extensions to C++ because they might allow code to compile on your machine but not on other people's machine
-set_target_properties(${PROJECT_NAME} PROPERTIES
-    CXX_EXTENSIONS OFF)
-
-# Add all the source files
-file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/* lib/*)
-target_sources(${PROJECT_NAME} PRIVATE ${SOURCES})
-target_include_directories(${PROJECT_NAME} PRIVATE src lib)
 
 # Download the sil library
 include(FetchContent)
@@ -25,5 +12,27 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(sil)
 
-# Link sil into the project
-target_link_libraries(${PROJECT_NAME} PRIVATE sil)
+function(create_exercise filename)
+    add_executable(${filename})
+
+    # Choose your C++ version
+    target_compile_features(${filename} PRIVATE cxx_std_17)
+
+    # Prevents compiler-specific extensions to C++ because they might allow code to compile on your machine but not on other people's machine
+    set_target_properties(${filename} PROPERTIES
+        CXX_EXTENSIONS OFF)
+
+    # Add all the source files
+    file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/${filename} lib/*)
+    target_sources(${filename} PRIVATE ${SOURCES})
+    target_include_directories(${filename} PRIVATE src lib)
+
+    # Link sil into the project
+    target_link_libraries(${filename} PRIVATE sil)
+endfunction()
+
+file(GLOB FILES CONFIGURE_DEPENDS src/*.cpp)
+foreach(FILE ${FILES})
+    get_filename_component(FILENAME ${FILE} NAME)
+    create_exercise(${FILENAME})
+endforeach()
