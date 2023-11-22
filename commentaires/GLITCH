@@ -1,0 +1,111 @@
+// int tour{0};
+
+// while (tour < 10)
+// {
+// int randomSizeX{random_int(image.height() / 16, image.height() / 10)};
+// int randomSizeY{random_int(image.width() / 20, image.width() / 18)};
+
+// sil::Image rectangle1{randomSizeX, randomSizeY};
+// sil::Image rectangle2{rectangle1.width(), rectangle2.height()};
+
+// int randomx{random_int(0, image.width() - 1)};
+// int randomy{random_int(0, image.width() - 1)};
+
+// // int randomx2{random_int(0, image.width() - 1)};
+// // int randomy2{random_int(0, image.width() - 1)};
+
+// for (randomx; randomx < image.width() - 1; randomx++)
+// {
+//     for (randomy; randomy < image.height() - 1; randomy++)
+//     {
+//         for (int x{0}; x < rectangle1.width() - 1; x++)
+//         {
+//             for (int y{0}; y < rectangle1.height() - 1; y++)
+//             {
+//                 rectangle1.pixel(x, y) = image.pixel(randomx, randomy);
+//             }
+//         }
+//     }
+// }
+
+// for (randomx2; randomx2 < image.width() - 1; randomx2++)
+// {
+//     for (randomy2; randomy2 < image.height() - 1; randomy2++)
+//     {
+//         for (int x{0}; x < rectangle2.width() - 1; x++)
+//         {
+//             for (int y{0}; y < rectangle2.height() - 1; y++)
+//             {
+//                 rectangle2.pixel(x, y) = image.pixel(randomx, randomy);
+//             }
+//         }
+
+//         // std::swap(rectangle1.pixel(randomx, randomy), rectangle2.pixel(randomx2, randomy2));
+//     }
+// }
+
+// rectangle1.save("output/rectangle1");
+// rectangle2.save("output/rectangle2");
+
+// tour++;
+// }
+
+/*EXPLOSION*/
+// for (int x{0}; x < image2.width(); x++)
+// {
+//     for (int y{0}; y < image2.height(); y++)
+//     {
+//         image2.pixel(x, y) = image.pixel(x, y);
+
+//         int h{random_int(0, image2.height())};
+//         int w{random_int(0, image2.width())};
+
+//         do
+//         {
+//             h = random_int(0, image2.height());
+//             w = random_int(0, image2.width());
+//         } while (h > image2.width() || w > image2.height());
+//         image.pixel(x + w, y + h) = image2.pixel(x, y);
+
+//         // std::swap(image.pixel(x, y), image2.pixel(x, y));
+//         std::swap(image2.pixel(x, y), image.pixel(x, y));
+//     }
+// }
+// image.save("output/truc.png");
+
+// return 0;
+
+// for (int x{random_int(0, image.width() - 1)}; x < image2.width(); x++)
+// {
+//     for (int y{random_int(0, image.height() - 1)}; y < image2.height(); y++)
+//     {
+
+// int h{random_int(0, image2.height())};
+// int w{random_int(0, image2.width())};
+
+// do
+// {
+//     h = random_int(0, image2.height());
+//     w = random_int(0, image2.width());
+// } while (h > image2.width() || w > image2.height());
+// image.pixel(x + w, y + h) = image2.pixel(x, y);
+
+// image2.pixel(x, y) = image.pixel(x, y);
+
+// std::swap(image.pixel(x + 100, y + 100), image2.pixel(x, y));
+// std::swap(image2.pixel(x, y), image.pixel(x, y));
+//     }
+// }
+
+/*int h{random_int(0, image.height() - 1)};
+int w{random_int(0, image.width() - 1)};
+if (h + image2.height() < image.height() && w + image2.width() < image.width())
+{
+    for (int c{0}; c < h; c++)
+    {
+        for (int d{0}; d < w; d++)
+        {
+            image.pixel(h + c, w + d) = image2.pixel(c, d);
+        }
+    }
+}*/
