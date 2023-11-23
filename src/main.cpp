@@ -2,14 +2,20 @@
 #include <iostream>
 #include <cstdlib> // std::rand & std::srand
 #include <ctime>   // std::time
+#include <math.h>
 #include "random.hpp"
 #include <complex>
 #include <glm/gtx/matrix_transform_2d.hpp>
 
-/*POUR VORTEX EX 18*/
+/*POUR VORTEX EX 18
 glm::vec2 rotated(glm::vec2 point, glm::vec2 center_of_rotation, float angle)
 {
     return glm::vec2{glm::rotate(glm::mat3{1.f}, angle) * glm::vec3{point - center_of_rotation, 0.f}} + center_of_rotation;
+}*/
+
+float brightness(glm::vec3 &color)
+{
+    return color.r + color.b + color.g;
 }
 
 int main()
@@ -51,12 +57,12 @@ int main()
     }
     image.save("output/ex3.png");*/
 
-    /*EX 4 PAS BON
+    /*EX 4
     sil::Image image{"images/logo.png"};
     // TODO: modifier l'image
     for (glm::vec3 &color : image.pixels())
     {
-        color = glm::vec3{1 - color.r, 1 - color.g, 1 - color.r};
+        color = glm::vec3{1 - color.r, 1 - color.g, 1 - color.b};
     }
     image.save("output/ex4.png");*/
 
@@ -116,6 +122,19 @@ int main()
     }
     image.save("output/matrix.png");*/
 
+    /*EX 8
+sil::Image image{"images/logo.png"};
+sil::Image image2{image.height(), image.width()};
+
+for (int x{0}; x < image2.width(); x++)
+{
+    for (int y{0}; y < image2.height(); y++)
+    {
+        image2.pixel(x, y) = image.pixel(y, image2.width() - x - 1);
+    }
+}
+image2.save("output/ex8.png");*/
+
     /*EX 9
     sil::Image image{"images/logo.png"};
     sil::Image image2{image.width(), image.height()};
@@ -150,39 +169,26 @@ int main()
 
     image2.save("output/ex9.png");*/
 
-    /*EX 8
-    sil::Image image{"images/logo.png"};
-    sil::Image image2{image.height(), image.width()};
+    /*EX 10 A REVOIR
+    sil::Image image{"images/photo.jpg"};
+    sil::Image image2{"images/photo.jpg"};
 
     for (int x{0}; x < image2.width(); x++)
     {
         for (int y{0}; y < image2.height(); y++)
         {
-            image2.pixel(x, y) = image.pixel(y, image2.width() - x - 1);
+            //ASSOMBRISSEMENT
+            image2.pixel(x, y).r = pow(image.pixel(x, y).r, 2);
+            image2.pixel(x, y).g = pow(image.pixel(x, y).g, 2);
+            image2.pixel(x, y).b = pow(image.pixel(x, y).b, 2);
+
+            //ECLAIRCISSEMENT
+            image2.pixel(x, y).r = pow(image.pixel(x, y).r, 0.5);
+            image2.pixel(x, y).g = pow(image.pixel(x, y).g, 0.5);
+            image2.pixel(x, y).b = pow(image.pixel(x, y).b, 0.5);
         }
     }
-    image2.save("output/ex8.png");*/
-
-    /*EX 9 A FAIRE
-    sil::Image image{"images/logo.png"};
-    sil::Image image2{"images/logo.png"};
-
-    for (glm::vec3 &color : image2.pixels())
-    {
-        glm::vec3{color.r, color.g, color.b};
-    }
-    image2.save("output/test.png");*/
-
-    /*EX 10 A REVOIR
-    sil::Image image{"images/photo.jpg"};
-
-    for (glm::vec3 &color : image.pixels())
-    {
-        color.g -= 0.1;
-        color.b -= 0.1;
-        color.r -= 0.1;
-    }
-    image.save("output/ex10.png");*/
+    image2.save("output/ex10.png");*/
 
     /*EX 14
     sil::Image image{"images/logo.png"};
@@ -387,7 +393,7 @@ int main()
 
     image2.save("output/ex18.png");*/
 
-    /*Ex 17*/
+    /*Ex 17
 
     sil::Image image{500, 500};
 
@@ -406,38 +412,140 @@ int main()
             while (count <= 50)
             {
                 z = z * z + c;
+
                 if (std::abs(z) > 2)
                 {
-                    image.pixel(x, y) = glm::vec3{1.f};
+
+                    image.pixel(x, y) = glm::vec3{0};
+
                     break;
                 }
+                else
+                {
+                    image.pixel(x, y) = glm::vec3{1};
+                }
+
                 count++;
             }
         }
     }
+    image.save("output/ex17.png");*/
 
-    // for (float x{0}; x < 2; x += 0.004)
+    // 2EME CODE FRACTALE A CORRIGER
+
+    // for (float x{-2}; x < 2; x += 0.008)
     // {
-    //     for (float y{0}; y < 2; y += 0.004)
+    //     for (float y{-2}; y < 2; y += 0.008)
     //     {
     //         std::complex<float> c{x, y};
     //         std::complex<float> z{0, 0};
-    //
-    //         while (std::abs(z) <= 2)
+    //         int count{0};
+    //         while (count <= 50)
     //         {
-
-    //             int int_x{static_cast<int>(x)};
-    //             int int_y{static_cast<int>(y)};
-
-    //             image.pixel(abs(int_x) * 250, abs(int_y) * 250).r = 1.f;
-    //             image.pixel(abs(int_x) * 250, abs(int_y) * 250).g = 1.f;
-    //             image.pixel(abs(int_x) * 250, abs(int_y) * 250).b = 1.f;
+    //             z = z * z + c;
+    //             if (std::abs(z) <= 2)
+    //             {
+    //                 break;
+    //             }
+    //             else
+    //             {
+    //                 int int_x{abs(static_cast<int>(x) * 250)};
+    //                 int int_y{abs(static_cast<int>(y) * 250)};
+    //                 for (int_x; int_x < image.width(); int_x++)
+    //                 {
+    //                     for (int_y; int_y < image.height(); int_y++)
+    //                     {
+    //                         image.pixel(int_x, int_y) = glm::vec3{1};
+    //                     }
+    //                 }
+    //             }
     //         }
-    // z = z * z + c;
-
     //     };
     // }
-    image.save("output/ex17.png");
 
+    // /*EX 25*/ Lolo et eli
+
+    // sil::Image image{"images/logo.png"};
+
+    // sil::Image minirectangle{30, 1};
+
+    // for (int i{0}; i < 30; i++)
+    // {
+    //     int const randomx{random_int(0, image.width() - 1)};
+    //     int const randomy{random_int(0, image.height() - 1)};
+
+    //     for (int x{0}; x < minirectangle.width(); x++)
+    //     {
+    //         if (randomx + x < image.width() && randomy + 1 < image.height())
+    //         {
+    //             minirectangle.pixel(x, randomy) = image.pixel(randomx + x, randomy); // pas compris
+    //         }
+    //         glm::vec3 color1 = image.pixel(x, randomy);
+    //         glm::vec3 color2 = image.pixel(x + 1, randomy);
+    //         // v.push_back(brightness(pixels[i]));
+    //         std::sort(minirectangle.pixels().begin(), minirectangle.pixels().end(), [](glm::vec3 &color1, glm::vec3 &color2)
+    //                   { return brightness(color1) < brightness(color2); });
+    //     }
+    //     if (randomx + 2 * (minirectangle.width()) < image.width() && (randomy + 1) < image.height())
+    //     {
+    //         for (int x{randomx + minirectangle.width()}; x < x + minirectangle.width(); x++)
+    //         {
+    //             image.pixel(x, randomy) = minirectangle.pixel(x, randomy);
+    //         }
+    //     }
+    // }
+
+    // image.save("output/image.png");
+    // minirectangle.save("output/minirectangle.png");
+    // return 0;
+
+    /*EX 25
+    sil::Image image{"images/logo.png"};
+
+    sil::Image minirectangle{30, 2};
+
+    for (int l{0}; l < 50; l++)
+    {
+
+        int const randomx{random_int(0, image.width() - 1)};
+        int const randomy{random_int(0, image.height() - 1)};
+
+        for (int x{0}; x < minirectangle.width(); x++)
+        {
+            for (int y{0}; y < minirectangle.height(); y++)
+            {
+                if (randomx + x < image.width() && randomy + y < image.height())
+                {
+                    minirectangle.pixel(x, y) = image.pixel(randomx + x, randomy + y);
+                }
+                glm::vec3 color1 = image.pixel(x, y);
+
+                glm::vec3 color2 = image.pixel(x + 1, y);
+
+
+                std::sort(minirectangle.pixels().begin(), minirectangle.pixels().end(), [](glm::vec3 &color1, glm::vec3 &color2)
+                          { return brightness(color1) < brightness(color2); });
+            }
+        }
+        for (int i{0}; i < 15; i++)
+        {
+
+            int const randomxLogo{random_int(randomx, randomx + 50)};
+            int const randomyLogo{random_int(randomy, randomy + 25)};
+            for (int x{0}; x < minirectangle.width(); x++)
+            {
+                for (int y{0}; y < minirectangle.height(); y++)
+                {
+                    if (randomxLogo + x < image.width() && randomyLogo + y < image.height())
+                    {
+                        std::swap(image.pixel(randomxLogo + x, randomyLogo + y), minirectangle.pixel(x, y));
+                    }
+                }
+            }
+        }
+    }
+
+    image.save("output/image.png");
+    minirectangle.save("output/minirectangle.png");*/
     return 0;
 }
