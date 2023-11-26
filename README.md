@@ -1,16 +1,14 @@
-# 🐣 S1 | Prog: Workshop
-
+# 🐣 S1 | Prog: Workshop C++ (20/22/2023)
 # RAPPORT
-20/22/2023
+## Laurine ALLEMON et Elisabeth WAGNER
 
 ---
 
+</br>
 Template de projet pour le workshop de prog des Imac1. Vous trouverez le sujet ici: https://dsmte.github.io/Learn--cpp_programming/Workshop
 
-<!-- [[_TOC_]]  --><!-- creer table des matiere -->
-
-
-<!-- bouton pour revenir en haut -->
+</br>
+</br>
 <details> <summary>EXERCICES WORKSHOP</summary>
 
 <br/>
@@ -433,12 +431,19 @@ Contrairement à ce que nous nous étions imaginé, créer une fonction permetta
 </br>
 
 ![logo](images/logo.png)
-![ex25](output/ex25.png)
+![effet_ombre_logo_imac](output/logo_effet_perso_ombre_imac.png)
+</br>
+
+![effet_ombre_logo_google](output/logo_effet_perso_ombre_google.png)
+</br>
+
+![effet_ombre_logo_amazon](output/logo_effet_perso_ombre_amazon.png)
 </details>
 
 <details> <summary>COMMENTAIRES</summary>
 Ce programme supplémentaire a pour but de créer une ombre sur n'importe quel logo afin de donner une impression de relief. 
-Cependant les pixels restent très voyants et certains vont même apparaitre à des endroits inaproriés du logo. Ne voyant pas d'où pourraient venir ces erreurs dans notre code, nous imaginons que le problème serait lié à la couleur des pixels du logo téléchargé en jpg. Les pixels ne seraient pas 100% blancs à cause de la compression.
+En revanche l'effet fonctionne plus ou moins bien en fonction des logo.
+Quelques fois, les pixels restent très voyants et certains vont même apparaitre à des endroits inaproriés du logo. Ne voyant pas d'où pourraient venir ces erreurs dans notre code, nous imaginons que le problème serait lié à la couleur des pixels du logo téléchargé en jpg. Les pixels ne seraient pas 100% blancs à cause de la compression.
 </details>
 
 ## EXERCICE 2 || COULEUR PIXEL ALEATOIRE || 
@@ -455,17 +460,4 @@ Ce programme supplémentaire ne nous a certes pas posé de difficultés mais nou
 </details>
 
 </details>
-
-
-<footer>
-Rapport par Laurine ALLEMON et Elisabeth WAGNER</footer>
-
-
-
-
-
-
-
-
-
 
