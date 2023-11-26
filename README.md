@@ -354,7 +354,11 @@ La plus grosse difficulté pour moi fût de comprendre l'utilisation de la fonct
 <details> <summary>RESULTATS</summary>
 
 ![logo](images/logo.png)
-![essai_tramage]
+![essai_tramage_logo](output/ex19_tramage_logo.png)
+</br>
+
+![logo](images/photo.jpg)
+![essai_tramage_photo](output/ex19_tramage_photo.jpg)
 
 </br>
 </details>
@@ -379,8 +383,8 @@ Cependant nous avaons réussi la notion de probabilité pour choisir la couleur 
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-La difficulté de cette exercice est de gérer les cas particuliers dans les coins et sur les bords. Mon programme ne s'occupe pas de ces pixels puisqu'il modifie la couleur de mes pixels à partir du (1,1) jusqu'au (299,344). De plus, mon programme ne permet pas de modifier le karnel simplement, il faut ajouter des pixels à mon tableau "trois_par_trois", puis à ma fonction "color" ainsi que changer l'indice du pixel qu'elle modifie et return.
-J'ai rencontré des difficultés lors de cet exercice car je m'obstinais à vouloir stocker les pixels résultants de ma fonction "color" dans un nouveau tableau au lieu de les appliquer directement à mon image. Ceci m'a fait perdre beaucoup de temps car cela empechait mon programme de fonctionner en plus de le complexifier inutilement.
+La difficulté de cette exercice est de gérer les cas particuliers dans les coins et sur les bords. Le programme ne s'occupe pas de ces pixels puisqu'il modifie la couleur des pixels à partir du (1,1) jusqu'au (299,344). De plus, le programme ne permet pas de modifier le karnel simplement, il faut ajouter des pixels àu tableau "trois_par_trois", puis à la fonction "color" ainsi que changer l'indice du pixel qu'elle modifie et return.
+Nous avons rencontré des difficultés lors de cet exercice car nous nous obstinions à vouloir stocker les pixels résultants de notre fonction "color" dans un nouveau tableau au lieu de les appliquer directement à mon image. Ceci nous a fait perdre beaucoup de temps car cela empechait le programme de fonctionner en plus de le complexifier inutilement.
 </details>
 
 ---
@@ -389,9 +393,11 @@ J'ai rencontré des difficultés lors de cet exercice car je m'obstinais à voul
 <details> <summary>RESULTATS</summary>
 
 ![logo](images/logo.png)
+![logo](output/logo_ex22_contour.png)
 </br>
 </details>
 <details> <summary>COMMENTAIRES</summary>
+Dans cet exercice, nous avons résussi à colorer les contours. Cependant nous trouvons les contours pas assez lisses à certains endroits
 </details>
 
 ---
@@ -411,7 +417,7 @@ J'ai rencontré des difficultés lors de cet exercice car je m'obstinais à voul
 </details>
 
 <details> <summary>COMMENTAIRES</summary>
-Contrairement à ce que je m'étais imaginé, créer une fonction permettant de trier les pixels par luminosité n'a pas été le plus dur. Pour moi, la difficulté s'est trouvée dans le déplacement des nouveaux minis rectangle triés au bon endroit dans l'image. Bien que leur position soit random, elle ne l'est pas autant que pour le glitch car le nouveau minirectangle reste a proximité du minirectangle d'origine.
+Contrairement à ce que nous nous étions imaginé, créer une fonction permettant de trier les pixels par luminosité n'a pas été le plus dur. Ici, la difficulté s'est trouvée dans le déplacement des nouveaux minis rectangle triés au bon endroit dans l'image. Bien que leur position soit random, elle ne l'est pas autant que pour le glitch car le nouveau minirectangle reste a proximité du minirectangle d'origine.
 </details>
 
 
@@ -421,9 +427,43 @@ Contrairement à ce que je m'étais imaginé, créer une fonction permettant de 
 </br>
 <details> <summary>EXERCICES SUPPLEMENTAIRES </summary>
 
-## EXERCICE OMBRE  || Ne garder que le vert || ⭐⭐⭐⭐
+## EXERCICE 1 || OMBRE || 
+
+<details> <summary>RESULTATS</summary>
+</br>
+
+![logo](images/logo.png)
+![ex25](output/ex25.png)
+</details>
+
+<details> <summary>COMMENTAIRES</summary>
+Ce programme supplémentaire a pour but de créer une ombre sur n'importe quel logo afin de donner une impression de relief. 
+Cependant les pixels restent très voyants et certains vont même apparaitre à des endroits inaproriés du logo. Ne voyant pas d'où pourraient venir ces erreurs dans notre code, nous imaginons que le problème serait lié à la couleur des pixels du logo téléchargé en jpg. Les pixels ne seraient pas 100% blancs à cause de la compression.
+</details>
+
+## EXERCICE 2 || COULEUR PIXEL ALEATOIRE || 
+
+<details> <summary>RESULTATS</summary>
+</br>
+
+![logo](images/logo.png)
+![pixel_aleatoire_couleur](output/logo_effet_perso_imac_couleur.png)
+</details>
+
+<details> <summary>COMMENTAIRES</summary>
+Ce programme supplémentaire ne nous a certes pas posé de difficultés mais nous avons voulu nous amuser à supprimer le logo de l'IMAC afin de le remplacer par des pixels colorés aléatoirement
+</details>
 
 </details>
+
+
+<footer>
+Rapport par Laurine ALLEMON et Elisabeth WAGNER</footer>
+
+
+
+
+
 
 
 
