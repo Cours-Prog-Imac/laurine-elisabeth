@@ -22,7 +22,6 @@ Template de projet pour le workshop de prog des Imac1. Vous trouverez le sujet i
 ![ex1](output/ex1.png)
 </details> 
 
-<!-- redimensionner =150x -->
 <details> <summary>COMMENTAIRES </summary>
 Ce premier exercice n'était pas dur mais permettait de nous faire comprendre comment agir sur les couleurs rouge, vert, bleu d'un pixel indépendamment les unes des autres.
 </details> 
@@ -63,24 +62,13 @@ Au départ, dans le but d'échanger les couleurs, j'ai fait l'erreur d'assigner 
 
 <details> <summary>COMMENTAIRES</summary>
 </br>
+Pour ce code, chacune de nous n'avez pas immédiatement pensé à faire une moyenne des trois couleurs pour obtenir du gris mais une fois la formule trouvée, le code est simple à réaliser.
 
-__Elisabeth__
-Je n'ai pas pensé immédiatemment à faire une moyenne des trois couleurs pour obtenir du gris mais une fois la formule trouvée, le code est simple à réaliser.
-</br>
-
-
-__Laurine__
-
-J'ai eu du mal à trouver la formule permettant de transformer un pixel de couluer en nuance de gris. Mais une fois trouvé le code n'a pas été difficile à ecrire.
 </details>
 </br>
 
 ---
 ## EXERCICE 4  || Négatif || ⭐
-
-
-<!-- [Remonter tout en haut](#🐣 s1 | prog: workshop)
-###s1 -->
 
 <details> <summary>RESULTATS</summary>
 </br>
@@ -92,17 +80,9 @@ J'ai eu du mal à trouver la formule permettant de transformer un pixel de coulu
 <details> <summary>COMMENTAIRES</summary>
 </br>
 
-__Elisabeth__
-
-Comme pour  l'exercice précédent, la difficulté est de trouver la formule (1-couleur concernée du pixel), mais le code en lui même est rapide et simple à réaliser.
-</br>
-
-__Laurine__
-Je n'ai pas rencontré de probleme particulier pour cet exercice.
+Comme pour l'exercice précédent, la difficulté est de trouver la formule (1-couleur concernée du pixel), mais le code en lui même est rapide et simple à réaliser.
 </details>
-
 </br>
-
 
 ---
 ## EXERCICE 5  || Dégradé || ⭐
@@ -115,7 +95,7 @@ Je n'ai pas rencontré de probleme particulier pour cet exercice.
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-Pour cet exercice, les couleurs rouge, vert et bleu de mon pixel sont les mêmes que celles du pixel précédent auquel j'ajoute 0.003. Ceci me permet d'obtenir un dégradé progressif du noir ver le blanc. Il faut bien penser à agir sur les trois couleurs pour obtenir du blanc et à réutiliser les valeurs du pixel précédent pour obtenir un dégradé progressif.  
+Pour cet exercice, les couleurs rouge, vert et bleu du pixel sont les mêmes que celles du pixel précédent auquel on ajoute 0.003. Ceci permet d'obtenir un dégradé progressif du noir vers le blanc. Il faut bien penser à agir sur les trois couleurs pour obtenir du blanc et à réutiliser les valeurs du pixel précédent pour obtenir un dégradé progressif.       
 
 </details>
 </br>
@@ -132,7 +112,7 @@ Pour cet exercice, les couleurs rouge, vert et bleu de mon pixel sont les mêmes
 <details> <summary>COMMENTAIRES</summary>
 </br>
 
-__Elisabeth__
+
 
 </details>
 
@@ -147,12 +127,6 @@ __Elisabeth__
 
 </details>
 <details> <summary>COMMENTAIRES</summary>
-
-__Elisabeth__
-</br>
-
-
-__Laurine__
 
 
 </details>
@@ -185,8 +159,8 @@ __Laurine__
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-J'avais d'abord évité cet exercice pour faire les suivants car il me semblait compliqué. Cependant, l'ayant finalement fait après avoir fini les exercices de niveau 3 et commencé ceux de niveau 4, il m'a paru très simple et je n'ai pas rencontré de difficultés. 
-Le seul piège à éviter me semble être l'utilisation de la même image.
+Nous avions d'abord sauté cet exercice pour faire les suivants car il nous semblait compliqué. Cependant, nous sommes revenu dessus après avoir fini les exercices de niveau 3 et commencé ceux de niveau 4. Il nous a alors paru très simple et n'avons pas rencontré de difficultés. 
+Le seul piège à éviter était l'utilisation de la même image pour faire les modifications.
 
 </details>
 
@@ -208,10 +182,10 @@ Le seul piège à éviter me semble être l'utilisation de la même image.
 <details> <summary>RESULTATS</summary>
 </br>
 
-![logo](images/logo_ex11_disque.png)
+![disque](images/logo_ex11_disque.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
-
+Cet exercice n'était pas difficile en soit, il fallait juste réussir à coder la formule de l'équation d'un disque.
 
 </details>
 
@@ -220,11 +194,10 @@ Le seul piège à éviter me semble être l'utilisation de la même image.
 <details> <summary>RESULTATS</summary>
 </br>
 
-![logo](images/logo_ex12_cercle.png)
+![cercle](images/logo_ex12_cercle.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
-
-
+Le légère difficulté de cet exercice était de trouver comment faire une epaisseur au cercle.
 
 </details>
 
@@ -233,7 +206,7 @@ Le seul piège à éviter me semble être l'utilisation de la même image.
 <details> <summary>RESULTATS</summary>
 </br>
 
-![logo](images/logo_ex13_rosace.png)
+![rosace](images/logo_ex13_rosace.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
@@ -252,7 +225,7 @@ Le seul piège à éviter me semble être l'utilisation de la même image.
 
 <details> <summary>COMMENTAIRES</summary>
 
-La difficulté de cette exercice est de trouver la formule du modulo, le reste est simple à réaliser.
+La difficulté de cet exercice est de trouver la formule du modulo, le reste est simple à réaliser.
 
 </details>
 
@@ -265,7 +238,7 @@ La difficulté de cette exercice est de trouver la formule du modulo, le reste e
 ![logo](images/logo.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
-
+Pour cet exercice, nous avons réutilisé le programme de la mosaique de l'exercice 4 auquel nous avons ajouté une boucle qui permet de retourner verticalement les pixels sur une tuile pair en largeur et horizontalement ceux sur une tuile pair en longueur. Cette boucle fonctionne bien sur la plupart des tuiles mais deux de l'avant dernière ligne ne se retourne pas verticalement. Nous avons donc essayé d'ajouter des conditions dans le if concerné en spécifiant précisément l'emplacement de ces deux tuiles mais cela ne fonctionne pas.
 
 </details>
 </br>
@@ -280,13 +253,13 @@ La difficulté de cette exercice est de trouver la formule du modulo, le reste e
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-La difficulté sur cet exercice etait d'utiliser deux images en reflechissant comment ces dernières étaient liés entre elle.
-Le positionnement des parties du logo a prendre nous a aussi posé beaucoup de problèmes car au départ nous prenions toujours la meme partie du logo, le carrée noir en haut a gauche. (voir image ci dessous) 
+La difficulté sur cet exercice etait d'utiliser deux images en réflechissant comment ces dernières étaient liées entre elle.
+Le positionnement des parties du logo a prendre nous a aussi posé beaucoup de problèmes car au départ nous prenions toujours la même partie du logo, le carré noir en haut à gauche. (voir l'image ci-dessous) 
 </br>
 
 ![essai_effet_glitch_noir](output/logo_ex_16_glitch.png)
 </br>
-Dans cet exercice il fallait aussi faire tres attention à ne pas dépasser la taille de l'image d'origine. 
+Dans cet exercice il fallait aussi faire très attention à ne pas dépasser la taille de l'image d'origine. 
 Ainsi qu'au dépassement de données. (en n'oubliant pas le "-1" lorsqu'on fait une boucle en fonction de la taille de l'image car on commence à 0)
 </details>
 </br>
@@ -297,11 +270,11 @@ Ainsi qu'au dépassement de données. (en n'oubliant pas le "-1" lorsqu'on fait 
 <details> <summary>RESULTATS</summary>
 
 ![logo](images/logo.png)
-![ex17](output/ex18.png)
+![ex17](output/ex17.png)
 </br>
 </details>
 <details> <summary>COMMENTAIRES</summary>
-Pour cette exercice, j'ai été beaucoup aidé car Colin m'a donné la formule de mon x_to_two et mon y_to_two pour passer de l'intervalle de la taille de mon image à l'intervalle [-2;2]. Cette formule m'a beaucoup facilité la réalisation du programme.
+Pour cet exercice, nous avons été aidé par nos camarades de classe qui nous ont conseillé d'utiliser la formule du x_to_two et y_to_two pour passer de l'intervalle de la taille de l'image à l'intervalle [-2;2]. Cette formule nous a par la suite beaucoup facilité la réalisation du programme.                     
 </details>
 </br>
 
@@ -316,7 +289,9 @@ Pour cette exercice, j'ai été beaucoup aidé car Colin m'a donné la formule d
 </details>
 
 <details> <summary>COMMENTAIRES</summary>
-La plus grosse difficulté pour moi fût de comprendre l'utilisation de la fonction rotated donnée. J'ai maintenant compris comment l'utiliser mais je ne comprends toujours pas bien son fonctionnement. De plus, je n'aurais sûrement pas pensé à utiliser la  distance sans les explications de Jules.
+La plus grosse difficulté fût de comprendre l'utilisation de la fonction "rotated" donnée. 
+Nous avons compris comment l'utiliser mais nous ne comprenons toujours pas bien son fonctionnement. 
+De plus, nous n'aurions sûrement pas pensé à utiliser la  distance sans les explications de Jules.  
 </details>
 </br>
 
@@ -352,9 +327,9 @@ Cependant nous avaons réussi la notion de probabilité pour choisir la couleur 
 </br>
 </details>
 <details> <summary>COMMENTAIRES</summary>
-
-La difficulté de cette exercice est de gérer les cas particuliers dans les coins et sur les bords. Le programme ne s'occupe pas de ces pixels puisqu'il modifie la couleur des pixels à partir du (1,1) jusqu'au (299,344). De plus, le programme ne permet pas de modifier le karnel simplement, il faut ajouter des pixels àu tableau "trois_par_trois", puis à la fonction "color" ainsi que changer l'indice du pixel qu'elle modifie et return.
-Nous avons rencontré des difficultés lors de cet exercice car nous nous obstinions à vouloir stocker les pixels résultants de notre fonction "color" dans un nouveau tableau au lieu de les appliquer directement à mon image. Ceci nous a fait perdre beaucoup de temps car cela empechait le programme de fonctionner en plus de le complexifier inutilement.
+La difficulté de cet exercice est de gérer les cas particuliers dans les coins et sur les bords. Le programme ne s'occupe pas de ces pixels puisqu'il modifie la couleur des pixels à partir du (1,1) jusqu'au (299,344). De plus, le programme ne permet pas de modifier le karnel simplement, il faut ajouter des pixels àu tableau "trois_par_trois", puis à la fonction "color" ainsi que changer l'indice du pixel qu'elle modifie et retourne.
+Nous avons rencontré des difficultés lors de cet exercice car nous nous obstinions à vouloir stocker les pixels résultants de notre fonction "color" dans un nouveau tableau au lieu de les appliquer directement à l'image. 
+Ceci nous a fait perdre beaucoup de temps car cela empêchait le programme de fonctionner en plus de le complexifier inutilement.   
 </details>
 
 ---
@@ -383,7 +358,7 @@ Dans cet exercice, nous avons résussi à colorer les contours. Cependant nous t
 </br>
 
 <details> <summary>COMMENTAIRES</summary>
-Contrairement à ce que nous nous étions imaginé, créer une fonction permettant de trier les pixels par luminosité n'a pas été le plus dur. Ici, la difficulté s'est trouvée dans le déplacement des nouveaux minis rectangle triés au bon endroit dans l'image. Bien que leur position soit random, elle ne l'est pas autant que pour le glitch car le nouveau minirectangle reste a proximité du minirectangle d'origine.
+Contrairement à ce que nous nous étions imaginé, créer une fonction permettant de trier les pixels par luminosité n'a pas été le plus dur. Ici, la difficulté s'est trouvée dans le déplacement des nouveaux minis rectangle triés au bon endroit dans l'image. Bien que leur position soit random, elle ne l'est pas autant que pour le glitch car le nouveau minirectangle reste a proximité du minirectangle d'origine.       
 </details>
 </br>
 
@@ -413,7 +388,6 @@ Zoom :
 Ici l'effet d'ombre que nous avons crée est assez léger car l'image d'origine est plus volumineuse (1600x1600), les pixels créant l'effet d'ombre sont donc très peu voyants. 
 En revanche sur ce logo les pixels ne sont pas à des positions indésirables.
 </details>
-</br>
 
 <details> <summary>COMMENTAIRES</summary>
 Ce programme supplémentaire a pour but de créer une ombre sur n'importe quel logo afin de donner une impression de relief. 
@@ -431,10 +405,67 @@ Quelques fois, les pixels restent très voyants et certains vont même apparaitr
 ![pixel_aleatoire_couleur](output/logo_effet_perso_imac_couleur.png)
 </details>
 
-</br>
 <details> <summary>COMMENTAIRES</summary>
 Ce programme supplémentaire ne nous a certes pas posé de difficultés mais nous avons voulu nous amuser à supprimer le logo de l'IMAC afin de le remplacer par des pixels colorés aléatoirement
 </details>
+</br>
+
+## EXERCICE 3 || PIXELS MANQUANTS || 
+
+<details> <summary>RESULTATS</summary>
+</br>
+
+![logo](images/logo.png)
+![pixels_manquants](output/pixels_manquants.png)
+</details>
+
+<details> <summary>COMMENTAIRES</summary>
+Ce programme est né lors de la réalisation du glitch et nous avons fais le choix de le garder. Comme on peut le voir, il s'agit d'une image semblable à celle du logo sur laquelle figure des espaces vides aléatoires. Cela s'explique par l'utilisation du "y += rand() % 15" en dernière condition du second for de la boucle qui permet d'appliquer à la nouvelle image noire la couleur des pixels du logo. Cette utilisation de l'aléatoire dans l'itération cause une absence de certains des pixels du logo sur la nouvelle image.
+</details>
+</br>
+
+## EXERCICE 4 || FOURRURE || 
+
+<details> <summary>RESULTATS</summary>
+</br>
+
+![logo](images/logo.png)
+![fourrure](output/fourrure.png)
+</details>
+
+<details> <summary>COMMENTAIRES</summary>
+Comme le programme précédent, celui-ci est né lors de la création du glitch. C'est également l'utilisation de l'aléatoire qui permet cet effet fourrure ou gazon. L'ajout de la valeur "rand()%2" à l'emplacement (x,y) du nouveau pixel crée se léger décalage aléatoire ce qui explique cette impression de petits poils sur les lettres et symboles. 
+</details>
+</br>
+
+## EXERCICE 5 || CIBLE IMAC || 
+
+<details> <summary>RESULTATS</summary>
+</br>
+
+![logo](images/logo.png)
+![cible_imac](output/cible_imac.png)
+</details>
+
+<details> <summary>COMMENTAIRES</summary>
+Ce programme a été crée lors de la réalisation du vortex. La cible imac née lorsqu'au lieu d'ajouter à l'angle utilisé pour la rotation la distance entre le centre de rotation et le point(x,y) multiplié par une valeur choisie (pas trop élevé ni trop basse pour avoir un joli vortex) on ajoute la valeur de x dans la boucle parcourant l'image.
+</details>
+</br>
+
+## EXERCICE 6 || MATRIX || 
+
+<details> <summary>RESULTATS</summary>
+</br>
+
+![logo](images/logo.png)
+![matrix](output/matrix.png)
+</details>
+
+<details> <summary>COMMENTAIRES</summary>
+Ce programme a été crée lors de la réalisation du bruit. L'effet matrix fonctionne lorsqu'au lieu de fixer une valeur aléatoire uniquement au sein de la boucle for parcourant les x verticaux OU au sein de celle parourant les y horizontaux, on l'applique aux deux.
+</details>
+</br>
+
 
 </details>
 
