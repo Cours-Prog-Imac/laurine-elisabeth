@@ -15,18 +15,17 @@ Template de projet pour le workshop de prog des Imac1. Vous trouverez le sujet i
 
 <br/>
 
+
 ## EXERCICE 1  || Ne garder que le vert || ⭐
+
+<details> <summary>RESULTATS</summary>
+
 ![logo](images/logo.png)
 ![ex1](output/ex1.png)
-
+</details> 
 
 <!-- redimensionner =150x -->
 <details> <summary>COMMENTAIRES </summary>
-
-__Elisabeth__
-</br>
-
-
 Ce premier exercice n'était pas dur mais permettait de nous faire comprendre comment agir sur les couleurs rouge, vert, bleu d'un pixel indépendamment les unes des autres.
 </details> 
 </br>
@@ -81,7 +80,7 @@ J'ai eu du mal à trouver la formule permettant de transformer un pixel de coulu
 
 
 ---
-EXERCICE 4  || Négatif || ⭐
+## EXERCICE 4  || Négatif || ⭐
 
 
 <!-- [Remonter tout en haut](#🐣 s1 | prog: workshop)
@@ -118,6 +117,7 @@ Je n'ai pas rencontré de probleme particulier pour cet exercice.
 ![logo_imac](images/logo.png)
 ![ex5](output/ex5.png)
 </br>
+</details>
 <details> <summary>COMMENTAIRES</summary>
 
 __Elisabeth__
@@ -129,6 +129,7 @@ __Laurine__
 </details>
 </br>
 
+---
 ## EXERCICE 6  || Miroir || ⭐⭐
 
 <details> <summary>RESULTATS</summary>
@@ -164,7 +165,6 @@ __Laurine__
 </br>
 
 
-
 ---
 ## EXERCICE 8  || Rotation de 90° || ⭐⭐
 
@@ -185,25 +185,23 @@ __Laurine__
 </br>
 
 
-
 ---
 ## EXERCICE 9    || RGB split || ⭐⭐
 
 <details> <summary>RESULTATS</summary>
 </br>
-</details>
-<details> <summary>COMMENTAIRES</summary>
-
-__Elisabeth__
-
-__Laurine__
-</details>
 
 ![logo](images/logo.png)
 ![ex2](output/ex2.png)
+</details>
+<details> <summary>COMMENTAIRES</summary>
 
 J'avais d'abord évité cet exercice pour faire les suivants car il me semblait compliqué. Cependant, l'ayant finalement fait après avoir fini les exercices de niveau 3 et commencé ceux de niveau 4, il m'a paru très simple et je n'ai pas rencontré de difficultés. 
 Le seul piège à éviter me semble être l'utilisation de la même image.
+
+</details>
+
+
 </br>
 </details>
 
@@ -221,6 +219,8 @@ Le seul piège à éviter me semble être l'utilisation de la même image.
 ## EXERCICE 10 || Luminosité || ⭐⭐
 <details> <summary>RESULTATS</summary>
 </br>
+
+![logo](images/logo.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
@@ -229,9 +229,12 @@ __Elisabeth__
 __Laurine__
 </details>
 
+---
 ## EXERCICE 11  || Disque || ⭐⭐
 <details> <summary>RESULTATS</summary>
 </br>
+
+![logo](images/logo.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
@@ -240,9 +243,12 @@ __Elisabeth__
 __Laurine__
 </details>
 
+---
 ## EXERCICE 12  || Cercle || ⭐
 <details> <summary>RESULTATS</summary>
 </br>
+
+![logo](images/logo.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
@@ -251,9 +257,12 @@ __Elisabeth__
 __Laurine__
 </details>
 
+---
 ## EXERCICE 13  || Rosace || ⭐⭐⭐
 <details> <summary>RESULTATS</summary>
 </br>
+
+![logo](images/logo.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
@@ -262,37 +271,40 @@ __Elisabeth__
 __Laurine__
 </details>
 
+---
 ## EXERCICE 14  || Mosaïque || ⭐⭐
 <details> <summary>RESULTATS</summary>
-</br>
-</details>
-<details> <summary>COMMENTAIRES</summary>
-
-__Elisabeth__
-
-__Laurine__
-</details>
-
-<details> <summary>Elisabeth</summary>
 
 ![logo](images/logo.png)
 ![ex18](output/ex14.png)
-La difficulté de cette exercice est de trouver la formule du modulo, le reste est simple à réaliser.
+</br>
 </details>
 
+<details> <summary>COMMENTAIRES</summary>
+
+La difficulté de cette exercice est de trouver la formule du modulo, le reste est simple à réaliser.
+
+</details>
+
+
+---
 ## EXERCICE 15  || Mosaïque miroir || ⭐⭐⭐
 <details> <summary>RESULTATS</summary>
 </br>
+
+![logo](images/logo.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-__Elisabeth__
 
-__Laurine__
 </details>
 
+---
 ## EXERCICE 16  || Glitch || ⭐⭐⭐
 <details> <summary>RESULTATS</summary>
+
+![logo](images/logo.png)
+![ex16_glitch](output/logo_ex_16_glitch_v5.png)
 </br>
 </details>
 <details> <summary>COMMENTAIRES</summary>
@@ -300,9 +312,16 @@ __Laurine__
 __Elisabeth__
 
 __Laurine__
+La difficulté sur cet exercice etait d'utiliser deux images en reflechissant comment ces dernières étaient liés entre elle.
+Le positionnement des parties du logo a prendre nous a aussi posé beaucoup de problèmes car au départ nous prenions toujours la meme partie du logo, le carrée noir en haut a gauche. (voir image ci dessous) 
+</br>
+![essai_effet_glitch_noir](output/logo_ex_16_glitch.png)
+</br>
+Dans cet exercice il fallait aussi faire tres attention à ne pas dépasser la taille de l'image d'origine. 
+Ainsi qu'au dépassement de données. (en n'oubliant pas le "-1" lorsqu'on fait une boucle en fonction de la taille de l'image car on commence à 0)
 </details>
 
-
+---
 ## EXERCICE 17  || Fractale de Mandelbrot || ⭐⭐⭐
 
 <details> <summary>RESULTATS</summary>
@@ -315,6 +334,7 @@ __Laurine__
 Pour cette exercice, j'ai été beaucoup aidé car Colin m'a donné la formule de mon x_to_two et mon y_to_two pour passer de l'intervalle de la taille de mon image à l'intervalle [-2;2]. Cette formule m'a beaucoup facilité la réalisation du programme.
 </details>
 
+---
 ## EXERCICE 18  || Vortex || ⭐⭐⭐(⭐)
 
 <details> <summary>RESULTATS</summary>
@@ -328,19 +348,25 @@ Pour cette exercice, j'ai été beaucoup aidé car Colin m'a donné la formule d
 La plus grosse difficulté pour moi fût de comprendre l'utilisation de la fonction rotated donnée. J'ai maintenant compris comment l'utiliser mais je ne comprends toujours pas bien son fonctionnement. De plus, je n'aurais sûrement pas pensé à utiliser la  distance sans les explications de Jules.
 </details>
 
+---
 ## EXERCICE 19  || Tramage || ⭐⭐⭐(⭐)
 
 <details> <summary>RESULTATS</summary>
+
+![logo](images/logo.png)
 </br>
 </details>
 <details> <summary>COMMENTAIRES</summary>
 </details>
 
+---
 ## EXERCICE 20  || Normalisation de l'histogramme || ⭐⭐⭐(⭐)
 
+---
 ## EXERCICE 21  || Convolutions || ⭐⭐⭐⭐
 
 <details> <summary>RESULTATS</summary>
+
 ![logo](images/logo.png)
 ![ex21](output/ex21.png)
 </br>
@@ -351,22 +377,29 @@ La difficulté de cette exercice est de gérer les cas particuliers dans les coi
 J'ai rencontré des difficultés lors de cet exercice car je m'obstinais à vouloir stocker les pixels résultants de ma fonction "color" dans un nouveau tableau au lieu de les appliquer directement à mon image. Ceci m'a fait perdre beaucoup de temps car cela empechait mon programme de fonctionner en plus de le complexifier inutilement.
 </details>
 
+---
 ## EXERCICE 22  || Netteté, Contours, etc. || ⭐
 
 <details> <summary>RESULTATS</summary>
+
+![logo](images/logo.png)
 </br>
 </details>
 <details> <summary>COMMENTAIRES</summary>
 </details>
 
+---
 ## EXERCICE 23  || Filtres séparables || ⭐⭐
 
+---
 ## EXERCICE 24  || Différence gaussiennes || ⭐⭐
 
+---
 ## EXERCICE 25  || Tri de pixels || ⭐⭐⭐⭐
 
 <details> <summary>RESULTATS</summary>
 </br>
+
 ![logo](images/logo.png)
 ![ex25](output/ex25.png)
 </details>
@@ -377,7 +410,6 @@ Contrairement à ce que je m'étais imaginé, créer une fonction permettant de 
 
 
 
-</details>
 </details>
 
 </br>
