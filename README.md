@@ -47,8 +47,8 @@ Pour réaliser cet exercice, j'ai choisi de créer une nouvelle variable afin de
 __Laurine__
 
 Au départ, dans le but d'échanger les couleurs, j'ai fait l'erreur d'assigner le canal bleu au canal rouge puis le canal rouge au canal bleu. Mais je me suis rendue compte que cette methode écrasait le canal bleu. J'ai donc trouvé une autre facon de faire fonctionner le programme en utilisant la fonction swap.
-</br>
 </details>
+</br>
 
 
 ---
@@ -74,8 +74,6 @@ __Laurine__
 J'ai eu du mal à trouver la formule permettant de transformer un pixel de couluer en nuance de gris. Mais une fois trouvé le code n'a pas été difficile à ecrire.
 </details>
 </br>
-</br>
-
 
 ---
 ## EXERCICE 4  || Négatif || ⭐
@@ -88,7 +86,7 @@ J'ai eu du mal à trouver la formule permettant de transformer un pixel de coulu
 </br>
 
 ![logo](images/logo.png)
-![ex4_negatif](output/ex1.png)
+![ex4_negatif](output/logo_ex4_negatif.png)
 </details>
 
 <details> <summary>COMMENTAIRES</summary>
@@ -112,17 +110,12 @@ Je n'ai pas rencontré de probleme particulier pour cet exercice.
 <details> <summary>RESULTATS</summary>
 </br>
 
-![logo_imac](images/logo.png)
 ![ex5](output/ex5.png)
 </br>
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-__Elisabeth__
 Pour cet exercice, les couleurs rouge, vert et bleu de mon pixel sont les mêmes que celles du pixel précédent auquel j'ajoute 0.003. Ceci me permet d'obtenir un dégradé progressif du noir ver le blanc. Il faut bien penser à agir sur les trois couleurs pour obtenir du blanc et à réutiliser les valeurs du pixel précédent pour obtenir un dégradé progressif.  
-</br>
-
-__Laurine__
 
 </details>
 </br>
@@ -131,13 +124,16 @@ __Laurine__
 ## EXERCICE 6  || Miroir || ⭐⭐
 
 <details> <summary>RESULTATS</summary>
+
+![logo_imac](images/logo.png)
+![logo_vert](./output/ex6.png)
 </br>
 </details>
 <details> <summary>COMMENTAIRES</summary>
+</br>
 
 __Elisabeth__
 
-__Laurine__
 </details>
 
 ---
@@ -147,9 +143,9 @@ __Laurine__
 </br>
 
 ![logo_imac](images/logo.png)
-![logo_vert](./output/logo_ex7.png)
+![logo_vert](./output/ex7.png)
 
-
+</details>
 <details> <summary>COMMENTAIRES</summary>
 
 __Elisabeth__
@@ -166,22 +162,17 @@ __Laurine__
 ---
 ## EXERCICE 8  || Rotation de 90° || ⭐⭐
 
-<details> <summary>__Elisabeth__</summary>
+
+<details> <summary>RESULTATS</summary>
 </br>
 
 ![logo_imac](images/logo.png)
-![logo_vert](./output/logo_ex8.png)
-</br>
+![logo_vert](./output/ex8.png)
 </details>
 
-<details> <summary>__Laurine__</summary>
-
-![logo_imac](images/logo.png)
-![logo_vert](./output/logo_ex8.png)
-</br>
+<details> <summary>COMMENTAIRES</summary>
 </details>
 </br>
-
 
 ---
 ## EXERCICE 9    || RGB split || ⭐⭐
@@ -190,7 +181,7 @@ __Laurine__
 </br>
 
 ![logo](images/logo.png)
-![ex2](output/ex2.png)
+![ex2](output/ex9.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
@@ -200,31 +191,16 @@ Le seul piège à éviter me semble être l'utilisation de la même image.
 </details>
 
 
-</br>
-</details>
-
-<details> <summary>Laurine</summary>
-
-![logo_imac](images/logo.png)
-![logo_vert](./output/logo_ex8.png)
-</br>
-</details>
-</br>
-
-
-
 ---
 ## EXERCICE 10 || Luminosité || ⭐⭐
 <details> <summary>RESULTATS</summary>
 </br>
 
-![logo](images/logo.png)
+![logo_imac](images/photo.jpg)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-__Elisabeth__
 
-__Laurine__
 </details>
 
 ---
@@ -232,13 +208,11 @@ __Laurine__
 <details> <summary>RESULTATS</summary>
 </br>
 
-![logo](images/logo.png)
+![logo](images/logo_ex11_disque.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-__Elisabeth__
 
-__Laurine__
 </details>
 
 ---
@@ -246,13 +220,12 @@ __Laurine__
 <details> <summary>RESULTATS</summary>
 </br>
 
-![logo](images/logo.png)
+![logo](images/logo_ex12_cercle.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-__Elisabeth__
 
-__Laurine__
+
 </details>
 
 ---
@@ -260,13 +233,12 @@ __Laurine__
 <details> <summary>RESULTATS</summary>
 </br>
 
-![logo](images/logo.png)
+![logo](images/logo_ex13_rosace.png)
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-__Elisabeth__
 
-__Laurine__
+
 </details>
 
 ---
@@ -296,6 +268,7 @@ La difficulté de cette exercice est de trouver la formule du modulo, le reste e
 
 
 </details>
+</br>
 
 ---
 ## EXERCICE 16  || Glitch || ⭐⭐⭐
@@ -307,17 +280,16 @@ La difficulté de cette exercice est de trouver la formule du modulo, le reste e
 </details>
 <details> <summary>COMMENTAIRES</summary>
 
-__Elisabeth__
-
-__Laurine__
 La difficulté sur cet exercice etait d'utiliser deux images en reflechissant comment ces dernières étaient liés entre elle.
 Le positionnement des parties du logo a prendre nous a aussi posé beaucoup de problèmes car au départ nous prenions toujours la meme partie du logo, le carrée noir en haut a gauche. (voir image ci dessous) 
 </br>
+
 ![essai_effet_glitch_noir](output/logo_ex_16_glitch.png)
 </br>
 Dans cet exercice il fallait aussi faire tres attention à ne pas dépasser la taille de l'image d'origine. 
 Ainsi qu'au dépassement de données. (en n'oubliant pas le "-1" lorsqu'on fait une boucle en fonction de la taille de l'image car on commence à 0)
 </details>
+</br>
 
 ---
 ## EXERCICE 17  || Fractale de Mandelbrot || ⭐⭐⭐
@@ -331,6 +303,7 @@ Ainsi qu'au dépassement de données. (en n'oubliant pas le "-1" lorsqu'on fait 
 <details> <summary>COMMENTAIRES</summary>
 Pour cette exercice, j'ai été beaucoup aidé car Colin m'a donné la formule de mon x_to_two et mon y_to_two pour passer de l'intervalle de la taille de mon image à l'intervalle [-2;2]. Cette formule m'a beaucoup facilité la réalisation du programme.
 </details>
+</br>
 
 ---
 ## EXERCICE 18  || Vortex || ⭐⭐⭐(⭐)
@@ -345,6 +318,7 @@ Pour cette exercice, j'ai été beaucoup aidé car Colin m'a donné la formule d
 <details> <summary>COMMENTAIRES</summary>
 La plus grosse difficulté pour moi fût de comprendre l'utilisation de la fonction rotated donnée. J'ai maintenant compris comment l'utiliser mais je ne comprends toujours pas bien son fonctionnement. De plus, je n'aurais sûrement pas pensé à utiliser la  distance sans les explications de Jules.
 </details>
+</br>
 
 ---
 ## EXERCICE 19  || Tramage || ⭐⭐⭐(⭐)
@@ -366,9 +340,7 @@ Notre plus grande difficulté ici a été de comprendre la logique du tramage, e
 Pour cet exercice nous ne sommes pas parvenue au résultat attendu.
 Cependant nous avaons réussi la notion de probabilité pour choisir la couleur que doit prendre le pixel (noir ou blanc) en fonction de la nuance de couleur de l'image d'origine. 
 </details>
-
----
-## EXERCICE 20  || Normalisation de l'histogramme || ⭐⭐⭐(⭐)
+</br>
 
 ---
 ## EXERCICE 21  || Convolutions || ⭐⭐⭐⭐
@@ -397,12 +369,7 @@ Nous avons rencontré des difficultés lors de cet exercice car nous nous obstin
 <details> <summary>COMMENTAIRES</summary>
 Dans cet exercice, nous avons résussi à colorer les contours. Cependant nous trouvons les contours pas assez lisses à certains endroits
 </details>
-
----
-## EXERCICE 23  || Filtres séparables || ⭐⭐
-
----
-## EXERCICE 24  || Différence gaussiennes || ⭐⭐
+</br>
 
 ---
 ## EXERCICE 25  || Tri de pixels || ⭐⭐⭐⭐
@@ -413,11 +380,12 @@ Dans cet exercice, nous avons résussi à colorer les contours. Cependant nous t
 ![logo](images/logo.png)
 ![ex25](output/ex25.png)
 </details>
+</br>
 
 <details> <summary>COMMENTAIRES</summary>
 Contrairement à ce que nous nous étions imaginé, créer une fonction permettant de trier les pixels par luminosité n'a pas été le plus dur. Ici, la difficulté s'est trouvée dans le déplacement des nouveaux minis rectangle triés au bon endroit dans l'image. Bien que leur position soit random, elle ne l'est pas autant que pour le glitch car le nouveau minirectangle reste a proximité du minirectangle d'origine.
 </details>
-
+</br>
 
 
 </details>
@@ -435,16 +403,24 @@ Contrairement à ce que nous nous étions imaginé, créer une fonction permetta
 </br>
 
 ![effet_ombre_logo_google](output/logo_effet_perso_ombre_google.png)
+On remarque que les pixels sont assez dispersés
 </br>
 
 ![effet_ombre_logo_amazon](output/logo_effet_perso_ombre_amazon.png)
+Zoom : 
+![zoom_effet_ombre_logo_amazon](images/zoom_effet_ombre_amazon.png)
+
+Ici l'effet d'ombre que nous avons crée est assez léger car l'image d'origine est plus volumineuse (1600x1600), les pixels créant l'effet d'ombre sont donc très peu voyants. 
+En revanche sur ce logo les pixels ne sont pas à des positions indésirables.
 </details>
+</br>
 
 <details> <summary>COMMENTAIRES</summary>
 Ce programme supplémentaire a pour but de créer une ombre sur n'importe quel logo afin de donner une impression de relief. 
 En revanche l'effet fonctionne plus ou moins bien en fonction des logo.
 Quelques fois, les pixels restent très voyants et certains vont même apparaitre à des endroits inaproriés du logo. Ne voyant pas d'où pourraient venir ces erreurs dans notre code, nous imaginons que le problème serait lié à la couleur des pixels du logo téléchargé en jpg. Les pixels ne seraient pas 100% blancs à cause de la compression.
 </details>
+</br>
 
 ## EXERCICE 2 || COULEUR PIXEL ALEATOIRE || 
 
@@ -455,6 +431,7 @@ Quelques fois, les pixels restent très voyants et certains vont même apparaitr
 ![pixel_aleatoire_couleur](output/logo_effet_perso_imac_couleur.png)
 </details>
 
+</br>
 <details> <summary>COMMENTAIRES</summary>
 Ce programme supplémentaire ne nous a certes pas posé de difficultés mais nous avons voulu nous amuser à supprimer le logo de l'IMAC afin de le remplacer par des pixels colorés aléatoirement
 </details>
