@@ -1,0 +1,23 @@
+#pragma once
+
+void vert();
+void echangeCanaux();
+void noirEtBlanc();
+void negatif();
+void degrade();
+void miroir();
+void bruit();
+void rotation();
+void split();
+void luminosite();
+void mosaique();
+void inverseMosaique();
+void glitch();
+void fractale();
+void vortex();
+void convolution();
+void triPixels();
+void cible_imac();
+void pixels_manquants();
+void fourrure();
+void matrix();
