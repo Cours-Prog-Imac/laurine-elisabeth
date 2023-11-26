@@ -13,7 +13,7 @@ Template de projet pour le workshop de prog des Imac1. Vous trouverez le sujet i
 <br/>
 
 ## EXERCICE 1  || Ne garder que le vert || ⭐
-![logo_imac](./output/pouet.png)
+![logo_imac](./images/logo.png)
 ![logo_vert](./output/logo_ex1.png)
 <!-- redimensionner =150x -->
 
@@ -38,7 +38,7 @@ Pour réaliser cet exercice, j'ai choisi de créer une nouvelle variable afin de
 
 <details> <summary>Laurine</summary>
 
-![logo_imac](./output/pouet.png)
+![logo_imac](./images/logo.png)
 ![logo_vert](./output/logo_ex2.png)
 </br>
 </details>
@@ -58,7 +58,7 @@ Je n'ai pas pensé immédiatemment à faire une moyenne des trois couleurs pour 
 </details>
 
 <details> <summary>Laurine</summary>
-![logo_imac](./output/pouet.png)
+![logo_imac](./images/logo.png)
 ![logo_vert](./output/logo_ex3.png)
 </br>
 </details>
@@ -87,7 +87,7 @@ Comme pour  l'exercice précédent, la difficulté est de trouver la formule (1-
 
 <details> <summary>Laurine</summary>
 
-![logo_imac](./output/pouet.png)
+![logo_imac](./images/logo.png)
 ![logo_vert](./output/logo_ex4.png)
 </br>
 </details>
@@ -107,7 +107,7 @@ Pou cet exercice, les couleurs rouge, vert et bleu de mon pixel sont les mêmes 
 </details>
 
 <details> <summary>Laurine</summary>
-![logo_imac](./output/pouet.png)
+![logo_imac](./images/logo.png)
 ![logo_vert](./output/logo_ex5.png)
 </br>
 </details>
@@ -121,14 +121,14 @@ Pou cet exercice, les couleurs rouge, vert et bleu de mon pixel sont les mêmes 
 <details> <summary>Elisabeth</summary>
 </br>
 
-![logo_imac](./output/pouet.png)
+![logo_imac](./images/logo.png)
 ![logo_vert](./output/logo_ex7.png)
 </br>
 </details>
 
 <details> <summary>Laurine</summary>
 
-![logo_imac](./output/pouet.png)
+![logo_imac](./images/logo.png)
 ![logo_vert](./output/logo_ex7.png)
 </br>
 </details>
@@ -142,14 +142,14 @@ Pou cet exercice, les couleurs rouge, vert et bleu de mon pixel sont les mêmes 
 <details> <summary>Elisabeth</summary>
 </br>
 
-![logo_imac](./output/pouet.png)
+![logo_imac](./images/logo.png)
 ![logo_vert](./output/logo_ex8.png)
 </br>
 </details>
 
 <details> <summary>Laurine</summary>
 
-![logo_imac](./output/pouet.png)
+![logo_imac](./images/logo.png)
 ![logo_vert](./output/logo_ex8.png)
 </br>
 </details>
@@ -173,7 +173,7 @@ Le seul piège à éviter me semble être l'utilisation de la même image.
 
 <details> <summary>Laurine</summary>
 
-![logo_imac](./output/pouet.png)
+![logo_imac](./images/logo.png)
 ![logo_vert](./output/logo_ex8.png)
 </br>
 </details>
@@ -250,7 +250,7 @@ Contrairement à ce que je m'étais imaginé, créer une fonction permettant de 
 
 EXERCICE 26  || Ne garder que le vert || ⭐⭐⭐⭐
 
-
+</details>
 
 
 
