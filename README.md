@@ -354,9 +354,15 @@ La plus grosse difficulté pour moi fût de comprendre l'utilisation de la fonct
 <details> <summary>RESULTATS</summary>
 
 ![logo](images/logo.png)
+![essai_tramage]
+
 </br>
 </details>
 <details> <summary>COMMENTAIRES</summary>
+
+Notre plus grande difficulté ici a été de comprendre la logique du tramage, entre les croix, les points et le blanc et le noir.
+Pour cet exercice nous ne sommes pas parvenue au résultat attendu.
+Cependant nous avaons réussi la notion de probabilité pour choisir la couleur que doit prendre le pixel (noir ou blanc) en fonction de la nuance de couleur de l'image d'origine. 
 </details>
 
 ---
