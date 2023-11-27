@@ -1,25 +1,16 @@
+// EX 16 : Glitch
+
 #include <iostream>
 #include <sil/sil.hpp>
 #include "random.hpp"
-
-// EX 16 : Glitch
-
-//Commentaire programme :
-//dure de reflechir en pensant au deux images
-//au debut je prenai toujours la meme partie de l'image 1 donc j'vais des glitch tout noir //voir photo glitch v2 et v3
-// au lieu de prendre des parties random de l'image 1
-// Je n'avais pas pensé qu'il fallait que les deux parties de programme fonctionne a peu pres de la meme maniere
-// => faire deux fois un if suivi de 2 for
-//aussi faire attention au dépassement de donnée
-//en faisant bien la taille de l'image -1 car on commence à 0
 
 int main()
 {
     sil::Image image1{"images/logo.png"};
     int tour{0};
-    while (tour < 20)
+    while (tour < 75)
     {
-        int image2RandomSizeX{random_int(10, 20)};
+        int image2RandomSizeX{random_int(10, 30)};
         int image2RandomSizeY{random_int(5, 10)};
 
         sil::Image image2{image2RandomSizeX, image2RandomSizeY}; //on créer une nouvelle image
@@ -52,7 +43,7 @@ int main()
                 }
             }
         }
-        image1.save("output/logo_ex_16_glitch_v4.png");
+        image1.save("output/logo_ex_16_glitch_v5.png");
         tour += 1;
     }
 
