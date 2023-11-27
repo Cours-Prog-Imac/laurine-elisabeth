@@ -163,7 +163,7 @@ Le seul piège à éviter était l'utilisation de la même image pour faire les 
 </br>
 
 ![photo_imac](images/photo.jpg)
-![photo_luminosite](output/ex10.jpg)
+![photo_luminosite](output/ex10.png)
 </details>
 <details> <summary>COMMENTAIRE</summary>
 Pour cet exercice, nous n'avons pas tout de suite pensé à utiliser la fonction puissance. Au départ nous avions simplement fait une soustraction/addition sur les couleurs RGB de tous les pixels de l'image. Puis, en regardant les indices fournis nous avons compris l'intérêt d'utiliser cette fonction et le lien vers la représentation visuelle de la courbe nous a permis de déterminer les valeur à utiliser.
@@ -181,6 +181,7 @@ Pour cet exercice, nous n'avons pas tout de suite pensé à utiliser la fonction
 Cet exercice n'était pas difficile en soit, il fallait juste réussir à coder la formule de l'équation d'un disque.
 
 Pour nous familiariser avec le codage de formes, nous avions d'abord commencé par faire un carré.
+
 ![carre](output/logo_ex11_carre.png)
 
 </details>
@@ -234,7 +235,7 @@ La difficulté de cet exercice est de trouver la formule du modulo, le reste est
 </br>
 
 ![logo](images/logo.png)
-![ex15_mosaique_miroir](images/ex15.png)
+![ex15_mosaique_miroir](output/ex15.png)
 </details>
 <details> <summary>COMMENTAIRE</summary>
 Pour cet exercice, nous avons réutilisé le programme de la mosaique de l'exercice 4 auquel nous avons ajouté une boucle qui permet de retourner verticalement les pixels sur une tuile pair en largeur et horizontalement ceux sur une tuile pair en longueur. Cette boucle fonctionne bien sur la plupart des tuiles mais deux de l'avant dernière ligne ne se retourne pas verticalement. Nous avons donc essayé d'ajouter des conditions dans le if concerné en spécifiant précisément l'emplacement de ces deux tuiles mais cela ne fonctionne pas.
